@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GreenStar — Know how sustainable your clothes really are.</title>
+<meta name="description" content="GreenStar is a browser extension that tells you how sustainable a fashion product is while you're shopping, and shows you better alternatives." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="top-row">
+    <a href="index.html" class="brand">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5" />
+        </svg>
+      </span>
+      <span class="wm">greenstar</span>
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#beta" class="btn btn-forest">Join beta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="eyebrow"><span class="dot"></span>Private beta · Spring 2026</span>
+      <span class="mono">London · 2026</span>
+    </div>
+
+    <h1 class="h-display">Know how<br/><em>sustainable</em><br/>your clothes<br/>really are.</h1>
+
+    <div class="hero-below">
+      <p class="pull">GreenStar is a browser extension that rates fashion products and brands as you shop online, so you can see <b>how sustainable something actually is</b> before you buy it, and find a better option if there is one.</p>
+      <div class="actions">
+        <a href="#beta" class="btn btn-forest">Request access
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+        </a>
+        <a href="how-it-works.html" class="btn btn-ghost">See how it works</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="group">
+      <span class="b-zara">Zara</span><span class="sep"></span>
+      <span class="b-uniqlo">UNIQLO</span><span class="sep"></span>
+      <span class="b-hm">H&amp;M</span><span class="sep"></span>
+      <span class="b-nike">Nike</span><span class="sep"></span>
+      <span class="b-cos">COS</span><span class="sep"></span>
+      <span class="b-adidas">adidas</span><span class="sep"></span>
+      <span class="b-ganni">Ganni</span><span class="sep"></span>
+      <span class="b-asos">asos</span><span class="sep"></span>
+      <span class="b-arket">ARKET</span><span class="sep"></span>
+      <span class="b-levis">Levi's</span><span class="sep"></span>
+    </span>
+    <span class="group">
+      <span class="b-zara">Zara</span><span class="sep"></span>
+      <span class="b-uniqlo">UNIQLO</span><span class="sep"></span>
+      <span class="b-hm">H&amp;M</span><span class="sep"></span>
+      <span class="b-nike">Nike</span><span class="sep"></span>
+      <span class="b-cos">COS</span><span class="sep"></span>
+      <span class="b-adidas">adidas</span><span class="sep"></span>
+      <span class="b-ganni">Ganni</span><span class="sep"></span>
+      <span class="b-asos">asos</span><span class="sep"></span>
+      <span class="b-arket">ARKET</span><span class="sep"></span>
+      <span class="b-levis">Levi's</span><span class="sep"></span>
+    </span>
+  </div>
+</div>
+
+<!-- PRESS / CREDIBILITY BAR -->
+<div class="press-bar">
+  <div class="wrap">
+    <div class="lbl">Built by people who've worked at</div>
+    <div class="press-logos">
+      <span class="item ms">Morgan Stanley</span>
+      <span class="item sp">S&amp;P Global</span>
+      <span class="item tx">The University of Oxford</span>
+      <span class="item tx">LSE</span>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT SHOWCASE -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The product</span>
+        <h2 class="h-display" style="margin-top:20px;">Open any<br/>product page.<br/><em>Get a rating.</em></h2>
+      </div>
+      <p>Click once. GreenStar reads the product's materials, where it was made, care labels, and any sustainability claims, then combines all of that with the brand's track record. No sign-up, no interruption to your shopping.</p>
+    </div>
+
+    <div class="showcase">
+      <div class="showcase-copy">
+        <div class="stats">
+          <div class="stat">
+            <div class="k">100+</div>
+            <div class="lb mono">Retailers supported</div>
+          </div>
+          <div class="stat">
+            <div class="k">100</div>
+            <div class="lb mono">Brands rated at launch</div>
+          </div>
+          <div class="stat">
+            <div class="k">~15s</div>
+            <div class="lb mono">To rate a product</div>
+          </div>
+          <div class="stat">
+            <div class="k">0</div>
+            <div class="lb mono">Accounts required</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup with real hoodie photo -->
+      <div class="mock-stage" aria-hidden="true">
+        <div class="mock-frame">
+          <div class="mock-browser">
+            <span></span><span></span><span></span>
+            <div class="url">retailer.com/basic-heavyweight-hoodie</div>
+          </div>
+          <div class="mock-content">
+            <div class="mock-product" style="background-image:url('https://images.unsplash.com/photo-1562826665-85cdb455ddb1?w=600&auto=format&fit=crop');"></div>
+            <div class="mock-meta">
+              <div class="tag">FEW ITEMS LEFT</div>
+              <h3>Heavyweight<br/>Basic Hoodie</h3>
+              <div class="lines"><span></span><span></span><span></span></div>
+              <div class="price">£32.99</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="popup-head">
+            <span class="logo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg>
+              <b>greenstar</b>
+            </span>
+            <span>V1.0</span>
+          </div>
+          <div class="popup-score">
+            <div class="n">4<em>.04</em></div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end;">
+              <span class="stars">★★★★<span class="empty">★</span></span>
+              <span class="mono" style="color:rgba(251,247,232,0.5); margin-top:4px; font-size:9px;">SUSTAINABILITY SCORE</span>
+            </div>
+          </div>
+          <div class="popup-bars">
+            <div class="popup-bar">
+              <span class="k">Materials</span>
+              <span class="bar"><i style="width:82%"></i></span>
+              <span class="v">4.2</span>
+            </div>
+            <div class="popup-bar">
+              <span class="k">Brand</span>
+              <span class="bar"><i style="width:66%"></i></span>
+              <span class="v">3.3</span>
+            </div>
+            <div class="popup-bar">
+              <span class="k">Transport</span>
+              <span class="bar"><i style="width:52%"></i></span>
+              <span class="v">2.6</span>
+            </div>
+            <div class="popup-bar">
+              <span class="k">Completeness</span>
+              <span class="bar"><i style="width:75%"></i></span>
+              <span class="v">0.75</span>
+            </div>
+          </div>
+          <div class="popup-foot">
+            <span class="chip">Opacity penalty</span>
+            <a href="#" class="alt-link">Alternatives
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">How it works</span>
+        <h2 class="h-display" style="margin-top:20px;">Three steps.<br/>No <em>homework.</em></h2>
+      </div>
+      <p>Read the page, combine product details with brand performance, and point you somewhere better when it makes sense. <a href="how-it-works.html" style="color:var(--forest); text-decoration:underline; text-underline-offset:4px; text-decoration-color:var(--lime); font-weight:700;">See full detail →</a></p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-card">
+        <span class="step">01 · Read</span>
+        <h3>We read<br/>the <em>page</em><br/>for you.</h3>
+        <p>The extension scans the product page and picks out what matters for sustainability. Brand, materials, where it was made, care labels, price, and any sustainability claims.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">02 · Rate</span>
+        <h3>Product <em>plus</em><br/>brand, in<br/>one score.</h3>
+        <p>60% what you're actually buying, 40% who made it. When key data is missing, we say so and lower the score accordingly. A transparent brand should never score the same as an opaque one.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">03 · Redirect</span>
+        <h3>A better<br/><em>option,</em> if<br/>there is one.</h3>
+        <p>Same style, similar colour, close to the price you were willing to pay, but with a meaningfully higher score. If nothing better exists, we'll tell you that too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY NOW -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Why now</span>
+        <h2 class="h-display" style="margin-top:20px;">Transparency is<br/>becoming <em>law.</em></h2>
+      </div>
+      <p>A once-in-a-generation wave of sustainability regulation is landing between 2026 and 2028. Brands that don't disclose will be forced to. Shoppers will have the right to ask. GreenStar is the layer that makes that data useful.</p>
+    </div>
+
+    <div class="regnow-grid">
+      <div class="regnow-card">
+        <span class="region">European Union</span>
+        <span class="when live">Live · July 2026</span>
+        <h3 class="law">Ecodesign for Sustainable Products <em>Regulation</em>.</h3>
+        <p class="copy">The EU's ESPR entered into force in July 2024. From <b>19 July 2026</b>, large fashion companies are prohibited from destroying unsold textiles, and must publicly disclose what they discard. Digital Product Passport rules follow in 2027.</p>
+        <span class="cite">Source: European Commission, Feb 2026 <a href="references.html">[1]</a></span>
+      </div>
+      <div class="regnow-card">
+        <span class="region">United States</span>
+        <span class="when">2026 · 2027</span>
+        <h3 class="law">California SB 253 &amp; <em>SB 261</em>.</h3>
+        <p class="copy">California's Climate Corporate Data Accountability Act requires 5,400+ companies with &gt;$1B revenue doing business in the state to publicly disclose Scope 1 &amp; 2 emissions from <b>10 August 2026</b>, and Scope 3 from 2027.</p>
+        <span class="cite">Source: CARB, Feb 2026 <a href="references.html">[2]</a></span>
+      </div>
+      <div class="regnow-card">
+        <span class="region">EU-wide</span>
+        <span class="when">2027</span>
+        <h3 class="law">Digital Product <em>Passports</em>.</h3>
+        <p class="copy">By July 2026, the EU will have a central DPP registry operational. The textile delegated act is expected late 2026 / early 2027, making DPPs mandatory for most apparel sold in the EU, with a compliance deadline around mid-2028.</p>
+        <span class="cite">Source: EU Green Forum, 2025 <a href="references.html">[3]</a></span>
+      </div>
+    </div>
+
+    <p class="fn" style="margin-top:18px;">Full citations and links: <a href="references.html">greenstar.eco/references</a></p>
+  </div>
+</section>
+
+<!-- INTENTION GAP STATS -->
+<section class="block-lime" style="padding:88px 0;">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:40px;">
+      <div>
+        <span class="eyebrow on-lime">The intention gap</span>
+        <h2 class="h-display" style="margin-top:20px;">Consumers <em>say</em><br/>one thing. They<br/><em>do</em> another.</h2>
+      </div>
+      <p>It isn't an awareness problem. It's a friction problem. The gap between what shoppers believe and what they buy is where GreenStar lives.</p>
+    </div>
+
+    <div class="stat-row" style="border-color:var(--ink); background:var(--cream);">
+      <div class="cell">
+        <span class="big">59<em>%</em></span>
+        <span class="lbl">of Gen Z admit their generation <em style="font-family:'Instrument Serif', serif; font-style:italic; font-weight:400; color:var(--forest-2);">talks</em> about sustainability more than they practise it.</span>
+        <span class="src">Source: RSM UK / Retail Economics, Dec 2025 <a href="references.html" style="color:var(--forest); text-decoration:underline;">[4]</a></span>
+      </div>
+      <div class="cell">
+        <span class="big">20<em>%</em></span>
+        <span class="lbl">of shoppers actively compare brands' sustainability credentials before buying.</span>
+        <span class="src">Source: Zalando Attitude–Behavior Gap Report <a href="references.html" style="color:var(--forest); text-decoration:underline;">[5]</a></span>
+      </div>
+      <div class="cell">
+        <span class="big">33<em>%</em></span>
+        <span class="lbl">of shoppers say sustainable options feel <em style="font-family:'Instrument Serif', serif; font-style:italic; font-weight:400; color:var(--forest-2);">too expensive</em>. Most never learn whether that's actually true.</span>
+        <span class="src">Source: Simon-Kucher Global Sustainability Study 2022 <a href="references.html" style="color:var(--forest); text-decoration:underline;">[6]</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY PREVIEW (DARK BLOCK) -->
+<section class="block-forest">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: 0.9fr 1.1fr; gap:80px; align-items:center;">
+      <div>
+        <span class="eyebrow light">Methodology</span>
+        <h2 class="h-display" style="margin-top:20px; font-size:clamp(48px,6vw,100px); color:var(--cream);">An estimate.<br/>Not an <em>audit.</em></h2>
+        <p style="margin-top:24px; color:rgba(251,247,232,0.7); font-size:16px; max-width:440px; line-height:1.55;">Every score is traceable. We show the signals we used, the signals we couldn't find, and exactly how missing data affected the result.</p>
+        <a href="methodology.html" class="btn btn-lime" style="margin-top:32px;">Read the methodology
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div>
+        <div class="formula" style="color:var(--cream); border-color:var(--cream);">
+          <div class="cell">
+            <div class="coef" style="color:var(--lime);">0.6×</div>
+            <div class="k">Product</div>
+          </div>
+          <div class="op" style="border-color:var(--cream);">+</div>
+          <div class="cell">
+            <div class="coef" style="color:var(--lime);">0.4×</div>
+            <div class="k">Brand</div>
+          </div>
+        </div>
+
+        <ul class="metrics-list" style="color:var(--cream); border-color:rgba(251,247,232,0.2); margin-top:40px;">
+          <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+            <span class="i">/01</span>
+            <span class="n">Standards</span>
+            <span class="d">GOTS, OEKO-TEX, Bluesign, Fair Trade, REACH, ISO 14001, and more.</span>
+            <span class="w">8 certs</span>
+          </li>
+          <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+            <span class="i">/02</span>
+            <span class="n">Incidents</span>
+            <span class="d">Severity and recency of publicly reported ESG incidents since 2020.</span>
+            <span class="w">5yr window</span>
+          </li>
+          <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+            <span class="i">/03</span>
+            <span class="n">Emissions</span>
+            <span class="d">Decarbonisation rate vs. the 1.5°C sector pathway (6.1% per year).</span>
+            <span class="w">SBTi-linked</span>
+          </li>
+          <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+            <span class="i">/04</span>
+            <span class="n">+ 4 more</span>
+            <span class="d">Climate Targets, Suppliers, Water, Transparency.</span>
+            <span class="w">View all →</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD TEASER -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">For brands · Dashboard</span>
+        <h2 class="h-display" style="margin-top:20px;">Benchmark any<br/>brand. <em>Live.</em></h2>
+      </div>
+      <p>The same data powering the consumer extension, in a dashboard built for fashion teams. Compare as many brands as you want, drill into any component, see your own products alongside your competitors'. <a href="dashboard.html" style="color:var(--forest); text-decoration:underline; text-underline-offset:4px; text-decoration-color:var(--lime); font-weight:700;">Try the demo →</a></p>
+    </div>
+
+    <div style="background:var(--white); border:1px solid var(--line); padding:32px; display:grid; grid-template-columns: 1fr 1fr; gap:24px; box-shadow:var(--shadow-sm);">
+      <div style="padding:22px; background:var(--forest); color:var(--cream); border-radius:4px;">
+        <div style="display:flex; gap:12px; align-items:center;">
+          <div style="width:44px; height:44px; background:var(--white); color:var(--forest); border-radius:10px; display:grid; place-items:center; font-weight:700; font-size:22px;">A</div>
+          <div>
+            <div style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:22px; letter-spacing:-0.03em;">Arket</div>
+            <div class="mono" style="color:rgba(251,247,232,0.6); margin-top:4px;">Stockholm, SE</div>
+          </div>
+          <div style="margin-left:auto; font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:42px; letter-spacing:-0.05em; color:var(--lime);">3.4</div>
+        </div>
+        <div style="margin-top:16px; display:grid; grid-template-columns:repeat(7, 1fr); gap:6px;">
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:76%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:76%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:64%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:68%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:60%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:60%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:70%; background:var(--lime);"></i></div>
+        </div>
+      </div>
+
+      <div style="padding:22px; background:linear-gradient(135deg, var(--forest), #0A2A1E); color:var(--cream); border-radius:4px;">
+        <div style="display:flex; gap:12px; align-items:center;">
+          <div style="width:44px; height:44px; background:var(--white); color:var(--forest); border-radius:10px; display:grid; place-items:center; font-weight:700; font-size:22px;">H</div>
+          <div>
+            <div style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:22px; letter-spacing:-0.03em;">H&amp;M</div>
+            <div class="mono" style="color:rgba(251,247,232,0.6); margin-top:4px;">Stockholm, SE</div>
+          </div>
+          <div style="margin-left:auto; font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:42px; letter-spacing:-0.05em; color:var(--lime);">3.0</div>
+        </div>
+        <div style="margin-top:16px; display:grid; grid-template-columns:repeat(7, 1fr); gap:6px;">
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:70%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:50%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:68%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:70%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:56%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:56%; background:var(--lime);"></i></div>
+          <div style="height:3px; background:rgba(251,247,232,0.15); border-radius:2px; overflow:hidden;"><i style="display:block; height:100%; width:60%; background:var(--lime);"></i></div>
+        </div>
+      </div>
+
+      <div style="grid-column: 1 / -1; padding:16px 22px; background:var(--lime-soft); border-radius:4px; display:flex; gap:14px; align-items:center;">
+        <span class="mono" style="background:var(--forest); color:var(--cream); padding:5px 10px; border-radius:99px; font-weight:700;">Insight</span>
+        <span style="font-family:'Helvetica Neue', sans-serif; font-size:14.5px; line-height:1.4;"><b style="color:var(--forest);">Arket</b> is <span style="font-weight:700; color:var(--forest);">13% more sustainable</span> than <b style="color:var(--forest);">H&amp;M</b> overall, led by Incidents (+1.3) and Transparency (+0.5).</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNATIVES with real product photos -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Alternatives</span>
+        <h2 class="h-display" style="margin-top:20px;">A better option.<br/>Same <em>style.</em></h2>
+      </div>
+      <p>Information alone doesn't change what people buy. Every low score is paired with something you could actually wear instead. Same style, similar colour, within 20% of your price, and a genuinely better score.</p>
+    </div>
+
+    <div class="alts-grid">
+      <div class="alt-card">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1562826665-85cdb455ddb1?w=600&auto=format&fit=crop');"></div>
+        <div class="alt-info">
+          <span class="tag">YOU ARE VIEWING</span>
+          <span class="ttl">Heavyweight Basic <em>Hoodie</em></span>
+          <span style="font-size:13px; color:var(--muted);">Retailer X · Cotton blend</span>
+          <div class="row">
+            <span class="price">£32.99</span>
+            <span class="score"><b>3.2</b>/5</span>
+          </div>
+        </div>
+      </div>
+      <div class="alt-card featured">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1622131527801-78b144aa7f2c?w=600&auto=format&fit=crop');"></div>
+        <div class="alt-info">
+          <span class="tag" style="color:var(--forest-2); font-weight:700;">RECOMMENDED · +1.4</span>
+          <span class="ttl">Organic Heavy <em>Hoodie</em></span>
+          <span style="font-size:13px; color:var(--muted);">Colorful Standard · 100% Organic</span>
+          <div class="row">
+            <span class="price">£38.00</span>
+            <span class="score"><b>4.6</b>/5</span>
+          </div>
+        </div>
+      </div>
+      <div class="alt-card">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1634853166008-2c9e90321c92?w=600&auto=format&fit=crop');"></div>
+        <div class="alt-info">
+          <span class="tag">ALTERNATIVE</span>
+          <span class="ttl">Hemp Oversized <em>Hoodie</em></span>
+          <span style="font-size:13px; color:var(--muted);">Pangaia · Hemp / Recycled</span>
+          <div class="row">
+            <span class="price">£35.00</span>
+            <span class="score"><b>4.1</b>/5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG STATEMENT -->
+<section class="block-lime">
+  <div class="wrap">
+    <span class="eyebrow on-lime">Why we built it</span>
+    <h2 class="big-statement" style="margin-top:28px;">Most shoppers don't want to read a 40-page ESG report. They just want to know: is this <em>sustainable, or not?</em> And if not, what should I buy instead?</h2>
+  </div>
+</section>
+
+<!-- DEFENSIBILITY / MOAT -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Why us</span>
+        <h2 class="h-display" style="margin-top:20px;">Three things<br/>nobody else has <em>yet.</em></h2>
+      </div>
+      <p>Sustainability ratings aren't new. What's new is where the rating lives, how it's calibrated, and what gets learned from every click. This is the defensible core.</p>
+    </div>
+
+    <div class="moat-grid">
+      <div class="moat-card">
+        <span class="num">01<em>.</em></span>
+        <h4>Distribution at<br/>the point of sale.</h4>
+        <p>Existing ratings live in blogs, apps, and PDFs. GreenStar lives on the product page itself, the only place purchase decisions actually happen. Every installed extension is distribution a competitor doesn't have.</p>
+      </div>
+      <div class="moat-card">
+        <span class="num">02<em>.</em></span>
+        <h4>A behavioural<br/>data flywheel.</h4>
+        <p>Every rating served is paired with anonymised behavioural data: price sensitivity to sustainability, which components drive switching, which alternatives convert. The dataset compounds. No LCA database has this.</p>
+      </div>
+      <div class="moat-card">
+        <span class="num">03<em>.</em></span>
+        <h4>A calibrated<br/>methodology.</h4>
+        <p>The 7-component framework and the 60/40 product-brand split were designed by a former commodity ESG ratings analyst at S&amp;P Global. It's opinionated, defensible, and built to survive regulatory scrutiny.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISOR QUOTE -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="quote-card">
+      <p class="q">The sustainability data exists. The rating frameworks exist. What's missing is a layer that puts both <em>in front of consumers at the moment they're actually deciding</em>. That's what makes GreenStar interesting.</p>
+      <div class="attrib">
+        <div>
+          <div class="who">Kayyan Elmasry, Founder</div>
+          <div class="role">Formerly Morgan Stanley · Fixed Income ESG Strategy &amp; Research</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section-sm" style="padding-top:0;">
+  <div class="wrap">
+    <div class="newsletter-card">
+      <div>
+        <span class="eyebrow">The monthly <em style="font-family:'Instrument Serif', serif; font-style:italic; font-weight:400; color:var(--forest-2);">100</em></span>
+        <h3 style="margin-top:14px;">Five new brands<br/>rated. <em>Every month.</em></h3>
+        <p>A short monthly email with the five newest brands we've rated, what their scores looked like, and which stood out. No marketing fluff, no tracking pixels, unsubscribe in one click.</p>
+      </div>
+      <div>
+        <form class="form" onsubmit="event.preventDefault(); this.querySelector('button').innerText='Thanks ✓'; this.querySelector('input').value='';">
+          <input type="email" placeholder="you@domain.com" required aria-label="Email" />
+          <button type="submit">Subscribe</button>
+        </form>
+        <p class="fn" style="margin-top:14px;">Launched in beta alongside the extension · No spam, ever</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BETA -->
+<section class="section" id="beta">
+  <div class="wrap">
+    <div class="beta-card">
+      <div>
+        <span class="eyebrow light">Private beta</span>
+        <h2 class="h-display" style="margin-top:20px;">Be first to shop<br/>with the <em>signal on.</em></h2>
+        <p>Limited seats. Early users help shape the methodology, the UI, and which retailers we support first. We only email when your invite is ready.</p>
+      </div>
+      <div>
+        <form class="beta-form" onsubmit="event.preventDefault(); this.querySelector('button').innerText='Thanks ✓'; this.querySelector('input').value='';">
+          <input type="email" placeholder="you@university.edu" required aria-label="Email" />
+          <button type="submit">Request</button>
+        </form>
+        <div class="beta-fine">Chrome &amp; Safari · UK first</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+          <span class="wm">greenstar</span>
+        </a>
+        <p>A sustainability rating for every fashion product and brand, built into your browser. Made in London, in private beta since January 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#beta">Join beta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="methodology.html">Scoring disclosure</a></li>
+          <li><a href="references.html">Data &amp; references</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <div class="big-wm">greenstar<span>*</span></div>
+      <div class="foot-mini">
+        <span>© 2026 · All rights reserved</span>
+        <span>V1.0 · Private Beta</span>
+        <span>London · UK</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({ duration: 1.0, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+  function raf(time){ lenis.raf(time); requestAnimationFrame(raf);}
+  requestAnimationFrame(raf);
+  const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);}})},{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
