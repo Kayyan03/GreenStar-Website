@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Methodology — GreenStar</title>
+<meta name="description" content="The full GreenStar scoring methodology. 0.6×Product plus 0.4×Brand, seven equal-weight brand components, every sub-score defined." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="top">
+  <div class="top-row">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+      <span class="wm">greenstar</span>
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="methodology.html" class="active">Methodology</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#beta" class="btn btn-forest">Join beta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" style="padding:72px 0 64px;">
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="eyebrow"><span class="dot"></span>Methodology</span>
+      <span class="mono">Last updated · April 2026</span>
+    </div>
+    <h1 class="h-display" style="font-size:clamp(52px, 9vw, 168px);">No black boxes.<br/><em>Every score shows<br/>its working.</em></h1>
+    <div class="hero-below" style="margin-top:40px;">
+      <p class="pull">GreenStar is an estimate, not an audit. Scores come from public sustainability reports, financial filings, and other reputable public sources. This page is the full scoring logic, including the exact weights we apply.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULA -->
+<section class="section" style="padding-top:40px;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The formula</span>
+        <h2 class="h-display" style="margin-top:20px;">Sixty-forty.<br/>By <em>design.</em></h2>
+      </div>
+      <p>Product signals get the larger share because they reflect what you're actually buying. Brand performance modulates, so a good product from a weak brand doesn't score the same as one from a brand doing the work.</p>
+    </div>
+
+    <div class="formula" style="color:var(--ink); border-color:var(--ink);">
+      <div class="cell">
+        <div class="coef" style="color:var(--forest);">0.6×</div>
+        <div class="k">Product</div>
+        <div class="mono" style="margin-top:12px;">Materials · Transport · Completeness</div>
+      </div>
+      <div class="op" style="border-color:var(--ink);">+</div>
+      <div class="cell">
+        <div class="coef" style="color:var(--forest);">0.4×</div>
+        <div class="k">Brand</div>
+        <div class="mono" style="margin-top:12px;">7 components · equal weight</div>
+      </div>
+      <div class="op" style="border-color:var(--ink);">=</div>
+      <div class="cell">
+        <div class="coef" style="color:var(--forest);">Score</div>
+        <div class="k" style="color:var(--forest-2);">Out of 5.0</div>
+      </div>
+    </div>
+
+    <!-- calibration disclosure -->
+    <div class="calib" style="margin-top:48px;">
+      <div>
+        <span class="eyebrow">Where the weights come from</span>
+        <h3 style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:clamp(24px, 2.8vw, 34px); letter-spacing:-0.03em; line-height:1.1; margin-top:18px;">An <em style="font-family:'Instrument Serif', serif; font-style:italic; font-weight:400; color:var(--forest-2);">opinionated</em> starting point. Published openly. Updated with&nbsp;data.</h3>
+        <p style="font-size:14.5px; line-height:1.6; color:var(--ink-2); margin-top:16px;">The 60/40 split and the 7-component weights aren't pulled from a regression. They're informed-judgement calibrations designed by our founding sustainability specialist (who works in commodity ESG ratings at <b>S&amp;P Global</b>) and our founder (formerly <b>Morgan Stanley</b>, Fixed Income ESG Strategy &amp; Research).</p>
+        <p style="font-size:14.5px; line-height:1.6; color:var(--ink-2); margin-top:12px;">We believe opinionated-and-published beats black-box-and-hidden. If an expert disagrees with a specific weight, we'd genuinely like to hear it. Post-MVP, we'll empirically calibrate against expert panels and observed behavioural data, and publish the update.</p>
+        <a href="references.html" class="btn btn-ghost" style="margin-top:24px;">See the calibration method
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="chart">
+        <div class="col">
+          <div class="bar lime" style="height:60%;" data-val="60%"></div>
+          <span class="lb">Product</span>
+        </div>
+        <div class="col">
+          <div class="bar" style="height:40%;" data-val="40%"></div>
+          <span class="lb">Brand</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND COMPONENTS -->
+<section class="block-forest">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow light">The 7 brand components</span>
+        <h2 class="h-display" style="color:var(--cream); margin-top:20px;">Seven equal<br/><em>vectors.</em></h2>
+      </div>
+      <p style="color:rgba(251,247,232,0.7);">Each component is scored out of 5. The brand score is the equally weighted average of all seven. No single category can dominate.</p>
+    </div>
+
+    <ul class="metrics-list" style="color:var(--cream); border-color:rgba(251,247,232,0.2);">
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/01</span>
+        <span class="n">Standards</span>
+        <span class="d">Third-party certifications, each weighted by relevance. GOTS (1.0), OEKO-TEX Standard 100 (0.75), Bluesign (0.75), ISO 14001 (0.5), Cradle to Cradle (0.5), Fair Trade (0.5), REACH (0.5), ISO 14040/44 LCA (0.5). Partial credit for limited coverage.</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/02</span>
+        <span class="n">Incidents</span>
+        <span class="d">Starts at 5.0. Deductions applied for publicly reported incidents over the last five years: 2.0 for severe (fatalities, systemic abuses, major spills), 1.0 for moderate, 0.5 for minor. Deductions halved for incidents 3 to 5 years old.</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/03</span>
+        <span class="n">Emissions</span>
+        <span class="d">Measured against the SBTi 1.5°C pathway, which requires 6.1% annual decarbonisation from 2019 levels. Formula: 2.5 + (actual rate − 6.1) × 0.5 × 2, capped between 0 and 5. Brands beating 6.1% per year score above 2.5.</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/04</span>
+        <span class="n">Climate Targets</span>
+        <span class="d">Average of five sub-scores: near-term ambition (SBTi 1.5°C aligned), scope coverage (Scope 1+2+3), SBTi adherence (validated), net-zero plan (2050 with milestones), and target progress (on track vs. stated goal).</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/05</span>
+        <span class="n">Suppliers</span>
+        <span class="d">Sum of four weighted sub-scores: Supplier Code of Conduct (out of 1.5), Audit and Enforcement (1.5), Supply Chain Transparency (1.0), and Living Wage Commitment (1.0).</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/06</span>
+        <span class="n">Water</span>
+        <span class="d">Sum of four weighted sub-scores: Chemical Management / ZDHC Compliance (out of 2.0), Water Management System (1.5), Water Use and Efficiency (1.0), and Water Stress Context (0.5).</span>
+        <span class="w">1/7 weight</span>
+      </li>
+      <li class="metric" style="border-color:rgba(251,247,232,0.15);">
+        <span class="i">/07</span>
+        <span class="n">Transparency</span>
+        <span class="d">Quality and accessibility of public sustainability disclosure: annual sustainability report (GRI referenced), data completeness (Scope 1+2 verified, Scope 3 partial or better), third-party assurance, and reporting framework adoption (TCFD, CDP, SASB).</span>
+        <span class="w">1/7 weight</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- OPACITY -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The opacity penalty</span>
+        <h2 class="h-display" style="margin-top:20px;">What we can't<br/>measure <em>matters.</em></h2>
+      </div>
+      <p>A brand that discloses 92% of the relevant fields shouldn't score the same as one that discloses 42%. Opacity lowers both the score and the visual confidence of the rating shown on the product page.</p>
+    </div>
+
+    <div style="background:var(--cream); border:1px solid var(--line); padding:44px; display:grid; grid-template-columns: 1fr 1fr; gap:48px; align-items:center;">
+      <div>
+        <div class="mono" style="margin-bottom:14px;">How it's applied</div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:15px; line-height:1.8; background:var(--bg); padding:20px; border:1px solid var(--line);">
+          score<sub>final</sub> = score<sub>raw</sub><br/>
+          &nbsp;&nbsp;× (0.5 + 0.5 × disclosure%)<br/><br/>
+          opacity<sub>display</sub> = 0.4 + 0.6 × disclosure%
+        </div>
+        <p style="margin-top:18px; font-size:14px; color:var(--ink-2); line-height:1.55;">
+          At 100% disclosure, the full raw score is awarded. At 50% disclosure, the score is multiplied by 0.75. At 0% disclosure, the raw score is halved. The visual star rating fades accordingly.
+        </p>
+      </div>
+      <div>
+        <div class="mono" style="margin-bottom:20px;">Visual example</div>
+        <div style="background:var(--white); border:1px solid var(--line); padding:24px; margin-bottom:16px;">
+          <div class="mono" style="margin-bottom:8px;">Retailer A · 92%</div>
+          <div style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:54px; letter-spacing:-0.05em; line-height:1; color:var(--forest);">4.0</div>
+        </div>
+        <div style="background:var(--white); border:1px solid var(--line); padding:24px; opacity:0.55;">
+          <div class="mono" style="margin-bottom:8px;">Retailer B · 42%</div>
+          <div style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:54px; letter-spacing:-0.05em; line-height:1; color:var(--forest);">2.2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA SOURCES -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Where the data comes from</span>
+        <h2 class="h-display" style="margin-top:20px;">Six public<br/><em>sources.</em></h2>
+      </div>
+      <p>All data is public and auditable. We don't use proprietary black-box feeds or paid partnerships that could bias the scoring. If you can't independently verify a claim, we don't score it.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-card">
+        <span class="step">01 · Brand reports</span>
+        <h3>Annual <em>sustainability</em><br/>reports.</h3>
+        <p>GRI-referenced, TCFD-aligned, published annually. Pulled directly from brand investor-relations pages.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">02 · Financial filings</span>
+        <h3>10-K and<br/><em>annual</em> reports.</h3>
+        <p>Where sustainability is material to the business, financial filings are now required to disclose it. A rich and reliable second source.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">03 · Cert registries</span>
+        <h3>Third-party<br/><em>certifications.</em></h3>
+        <p>Public registries from GOTS, OEKO-TEX, Bluesign, Fair Trade, B-Corp, Cradle to Cradle. Auto-verified. No self-reporting.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">04 · Incidents</span>
+        <h3>Clean Clothes,<br/><em>FashionChecker.</em></h3>
+        <p>Independent incident databases tracking labour violations, safety failures, and enforcement actions across the sector.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">05 · SBTi database</span>
+        <h3>Science-Based<br/><em>Targets.</em></h3>
+        <p>Target progress, validation status, and pathway alignment. Public, audited, with clearly documented methodology.</p>
+      </div>
+      <div class="how-card">
+        <span class="step">06 · Product pages</span>
+        <h3>Retailer<br/><em>product data.</em></h3>
+        <p>Real-time, pulled by the extension: materials, origin, care labels, price, sustainability claims. The consumer half of the equation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG STATEMENT -->
+<section class="block-lime">
+  <div class="wrap">
+    <span class="eyebrow on-lime">Principle</span>
+    <h2 class="big-statement" style="margin-top:28px;">No black boxes. No <em>"trust us."</em> Every score shows its working.</h2>
+  </div>
+</section>
+
+<!-- NEXT -->
+<section class="section-sm">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line);">
+      <a href="dashboard.html" style="padding:40px 32px; background:var(--bg); border-right:1px solid var(--line); display:flex; flex-direction:column; gap:10px; transition: background .3s var(--ease);" onmouseover="this.style.background='var(--cream)'" onmouseout="this.style.background='var(--bg)'">
+        <span class="mono">Next →</span>
+        <span style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:36px; letter-spacing:-0.03em; line-height:1; color:var(--forest);">The dashboard</span>
+        <span style="font-size:14px; color:var(--ink-2); margin-top:4px;">See the methodology applied, live and side by side.</span>
+      </a>
+      <a href="about.html" style="padding:40px 32px; background:var(--bg); display:flex; flex-direction:column; gap:10px; transition: background .3s var(--ease);" onmouseover="this.style.background='var(--cream)'" onmouseout="this.style.background='var(--bg)'">
+        <span class="mono">Or →</span>
+        <span style="font-family:'Helvetica Neue', sans-serif; font-weight:700; font-size:36px; letter-spacing:-0.03em; line-height:1; color:var(--forest);">Who built this</span>
+        <span style="font-size:14px; color:var(--ink-2); margin-top:4px;">The team, the roadmap, how to get in touch.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+          <span class="wm">greenstar</span>
+        </a>
+        <p>A sustainability rating for every fashion product and brand, built into your browser. Made in London, in private beta since January 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="index.html#beta">Join beta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="methodology.html">Scoring disclosure</a></li>
+          <li><a href="references.html">Data &amp; references</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <div class="big-wm">greenstar<span>*</span></div>
+      <div class="foot-mini">
+        <span>© 2026 · All rights reserved</span>
+        <span>V1.0 · Private Beta</span>
+        <span>London · UK</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+  const lenis = new Lenis({ duration: 1.0, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
+  function raf(time){ lenis.raf(time); requestAnimationFrame(raf);}
+  requestAnimationFrame(raf);
+</script>
+
+</body>
+</html>
