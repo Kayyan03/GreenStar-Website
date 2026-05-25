@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — GreenStar for Brands</title>
+<meta name="description" content="The B2B sustainability benchmarking dashboard for fashion. Compare as many brands as you want across seven components, drill into any product, see your own data alongside your competitors'." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="top">
+  <div class="top-row">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+      <span class="wm">greenstar</span>
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#demo" class="btn btn-forest">Request demo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+      </a>
+      <button class="menu-trigger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="menu-overlay" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+      <a href="how-it-works.html">How it <em>works</em></a>
+      <a href="methodology.html">Methodology</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="about.html">About</a>
+  </nav>
+  <div class="foot">
+    <a class="cta" href="index.html#beta">
+      <span>Join the private beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+
+
+<section class="hero" style="padding:72px 0 48px;">
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="eyebrow"><span class="dot"></span>For brands · B2B dashboard</span>
+      <span class="mono">Live · Interactive · Try below</span>
+    </div>
+    <h1 class="h-display" style="font-size:clamp(52px, 9vw, 168px);">Benchmark any<br/>brand. <em>Live.</em></h1>
+    <div class="hero-below" style="margin-top:40px;">
+      <p class="pull">The same data powering the consumer extension, rebuilt for fashion teams. <b>Compare as many brands as you want</b>, see your own products alongside your competitors', and drill into any of the seven components that drive the score.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE DASHBOARD -->
+<section class="section-sm" style="padding-top:20px;">
+  <div class="wrap">
+
+    <div class="dash-shell">
+
+      <div class="dash-control">
+        <div class="brand-picker">
+          <label>Brand A</label>
+          <select id="brand-a">
+            <option value="arket" selected>Arket</option>
+            <option value="hm">H&M</option>
+            <option value="cos">COS</option>
+            <option value="zara">Zara</option>
+            <option value="uniqlo">Uniqlo</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="ganni">Ganni</option>
+            <option value="patagonia">Patagonia</option>
+            <option value="pangaia">Pangaia</option>
+            <option value="shein">Shein</option>
+          </select>
+        </div>
+        <div class="dash-vs">VS</div>
+        <div class="brand-picker">
+          <label>Brand B</label>
+          <select id="brand-b">
+            <option value="arket">Arket</option>
+            <option value="hm" selected>H&M</option>
+            <option value="cos">COS</option>
+            <option value="zara">Zara</option>
+            <option value="uniqlo">Uniqlo</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="ganni">Ganni</option>
+            <option value="patagonia">Patagonia</option>
+            <option value="pangaia">Pangaia</option>
+            <option value="shein">Shein</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="dash-brands">
+        <div class="dash-brand brand-a">
+          <div class="db-top">
+            <div class="db-logo">A</div>
+            <div class="db-info">
+              <div class="name"><span class="name-text">Arket</span><span class="parent">H&amp;M GROUP</span></div>
+              <div class="loc">Stockholm, SE</div>
+            </div>
+          </div>
+          <div class="db-score-row">
+            <div class="db-score">3.4</div>
+            <div class="db-score-meta">
+              <div class="stars">★★★<span style="opacity:0.4;">★★</span></div>
+              <div class="out">Out of 5.0</div>
+            </div>
+          </div>
+          <div class="db-strip">
+            <div class="db-seg"><div class="bar"><i style="width:76%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:76%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:64%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:68%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:60%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:60%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:70%;"></i></div></div>
+          </div>
+        </div>
+        <div class="dash-brand brand-b">
+          <div class="db-top">
+            <div class="db-logo">H</div>
+            <div class="db-info">
+              <div class="name"><span class="name-text">H&amp;M</span><span class="parent">H&amp;M GROUP</span></div>
+              <div class="loc">Stockholm, SE</div>
+            </div>
+          </div>
+          <div class="db-score-row">
+            <div class="db-score">3.0</div>
+            <div class="db-score-meta">
+              <div class="stars">★★★<span style="opacity:0.4;">★★</span></div>
+              <div class="out">Out of 5.0</div>
+            </div>
+          </div>
+          <div class="db-strip">
+            <div class="db-seg"><div class="bar"><i style="width:70%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:50%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:68%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:70%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:56%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:56%;"></i></div></div>
+            <div class="db-seg"><div class="bar"><i style="width:60%;"></i></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dash-insight">
+        <span class="tag">Insight</span>
+        <span class="text"><b>Arket</b> is <span class="pct">13% more sustainable</span> than <b>H&amp;M</b> overall, led by Incidents (+1.3) and Transparency (+0.5).</span>
+      </div>
+
+      <div class="dash-components">
+        <div class="dc-row" style="background:var(--cream); padding:14px 28px; border-bottom:1px solid var(--line);">
+          <span></span>
+          <span class="mono" style="font-size:10px;">Component</span>
+          <span class="mono brand-a-label" style="font-size:10px;">Arket</span>
+          <span class="mono brand-b-label" style="font-size:10px;">H&amp;M</span>
+          <span class="mono" style="font-size:10px; text-align:right;">Weight</span>
+        </div>
+
+        <div class="dc-row" data-key="standards">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          </span>
+          <span class="name">Adherence to Standards</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:76%;"></i></span><span class="val">3.8</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i style="width:70%;"></i></span><span class="val">3.5</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="incidents">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </span>
+          <span class="name">Incidents</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:76%;"></i></span><span class="val">3.8</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i class="low" style="width:50%;"></i></span><span class="val">2.5</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="emissions">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </span>
+          <span class="name">Emissions</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:64%;"></i></span><span class="val">3.2</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i style="width:68%;"></i></span><span class="val">3.4</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="targets">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </span>
+          <span class="name">Climate Targets</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:68%;"></i></span><span class="val">3.4</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i style="width:70%;"></i></span><span class="val">3.5</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="suppliers">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <span class="name">Suppliers</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:60%;"></i></span><span class="val">3.0</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i class="low" style="width:56%;"></i></span><span class="val">2.8</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="water">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          </span>
+          <span class="name">Water</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:60%;"></i></span><span class="val">3.0</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i class="low" style="width:56%;"></i></span><span class="val">2.8</span></span>
+          <span class="w">1/7</span>
+        </div>
+
+        <div class="dc-row" data-key="transparency">
+          <span class="ico">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </span>
+          <span class="name">Transparency</span>
+          <span class="dc-bar bar-a"><span class="track"><i style="width:70%;"></i></span><span class="val">3.5</span></span>
+          <span class="dc-bar bar-b"><span class="track"><i style="width:60%;"></i></span><span class="val">3.0</span></span>
+          <span class="w">1/7</span>
+        </div>
+      </div>
+
+      <div class="dash-footer">
+        <span class="t">Data updated · April 2026 · 100 brands rated</span>
+        <div class="actions">
+          <button class="btn btn-ghost" style="font-size:12px; padding:10px 16px;">Export PDF</button>
+          <a href="#demo" class="btn btn-forest" style="font-size:12px; padding:10px 16px;">Full access</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="mono" style="margin-top:16px; text-align:center;">↑ Demo data · Try switching brands in the dropdowns above</p>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">What you get</span>
+        <h2 class="h-display" style="margin-top:20px;">Your brand,<br/>your <em>products,</em><br/>everyone else's.</h2>
+      </div>
+      <p>Everything the consumer extension shows, plus everything a sustainability team actually needs to act on it. Brand-level scores, product-level breakdowns, and live benchmarking against whatever peer set you want to track.</p>
+    </div>
+
+    <div class="dash-features">
+      <div class="df-card">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h4>Your <em>brand</em><br/>and your peers.</h4>
+        <p>Compare as many brands as you want, not just two. Filter by parent group, product category, or market. See exactly where you lead, where you lag, and which components are moving the score.</p>
+      </div>
+      <div class="df-card">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+        </div>
+        <h4>Product-level<br/><em>drill-down.</em></h4>
+        <p>Not just brands. Every product in your catalogue and every product your competitors sell, rated on the same methodology. Find the sustainability outliers in your own line and in theirs.</p>
+      </div>
+      <div class="df-card">
+        <div class="ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h4>Alerts and<br/><em>delta tracking.</em></h4>
+        <p>Score movements, new incidents, target validations, competitor changes. Delivered to your inbox or your Slack, so you never have to check back in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILOT WALKTHROUGH -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Day-one walkthrough</span>
+        <h2 class="h-display" style="margin-top:20px;">What a <em>Ganni</em><br/>sustainability team<br/>would see.</h2>
+      </div>
+      <p>A hypothetical onboarding, built from real data. The first 30 minutes inside the dashboard, end to end.</p>
+    </div>
+
+    <div class="pilot-card">
+      <div class="body">
+        <h3>From annual report<br/>to <em>actionable benchmark.</em></h3>
+        <p>On day one, a Ganni sustainability analyst loads the dashboard and finds Ganni already scored 3.6/5. GreenStar has ingested the 2024 annual report, cross-referenced the SBTi database, pulled GOTS and Bluesign certification data, and checked the last five years of Clean Clothes Campaign incident records.</p>
+        <p>The analyst builds a custom peer set: <b>COS, Arket, Patagonia, and Pangaia</b>. Within two clicks, they can see that Ganni leads on Incidents and Suppliers but trails Patagonia on Standards and Transparency, and specifically lacks ISO 14001 certification that most peers have at partial coverage.</p>
+        <p>A PDF export is sent to the CEO before the 10am call. By end of week, the sustainability team has three specific investment recommendations with quantified score uplifts attached. <b>That's the entire point.</b></p>
+      </div>
+      <div class="walkthrough">
+        <div class="head">First 30 minutes</div>
+        <div class="line"><span class="k">00:00</span><span class="v">Analyst lands on dashboard. Ganni auto-selected. <b>Score: 3.6</b></span></div>
+        <div class="line"><span class="k">02:30</span><span class="v">Adds 4 peers: COS, Arket, Patagonia, Pangaia</span></div>
+        <div class="line"><span class="k">05:00</span><span class="v">Drills into <b>Standards</b>: ISO 14001 gap flagged</span></div>
+        <div class="line"><span class="k">08:15</span><span class="v">Drills into <b>Transparency</b>: TCFD partial alignment identified</span></div>
+        <div class="line"><span class="k">14:00</span><span class="v">Three specific actions listed with projected score uplifts</span></div>
+        <div class="line"><span class="k">22:00</span><span class="v">PDF export sent to CEO &amp; Head of Sustainability</span></div>
+        <div class="line"><span class="k">30:00</span><span class="v"><b>Done.</b> Monday morning call now has data, not vibes.</span></div>
+      </div>
+    </div>
+
+    <p class="fn" style="margin-top:18px;">Pilot walkthrough uses publicly available brand data. All scores and findings are illustrative. Contact us for a real walkthrough of your brand.</p>
+  </div>
+</section>
+
+<!-- BIG STATEMENT -->
+<section class="block-forest">
+  <div class="wrap">
+    <span class="eyebrow light">What this replaces</span>
+    <h2 class="big-statement" style="margin-top:28px; color:var(--cream);">No more spreadsheets of <em>competitor PDFs</em>. No more "where do we stand?" on every monthly call.</h2>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Pricing</span>
+        <h2 class="h-display" style="margin-top:20px;">Three tiers.<br/>All <em>transparent.</em></h2>
+      </div>
+      <p>Built for sustainability teams at brands and retailers, plus investor-facing ESG analysts. Volume and API pricing on request.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <span class="eyebrow">Starter</span>
+        <h3>Observer</h3>
+        <div class="price">£0<small>/month</small></div>
+        <ul>
+          <li>Read-only access to 100 rated brands</li>
+          <li>Two-brand comparison</li>
+          <li>Public data only</li>
+          <li>Methodology access</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost" style="margin-top:auto; align-self:flex-start;">Start free</a>
+      </div>
+
+      <div class="pricing-card featured">
+        <span class="eyebrow">Pro · Most popular</span>
+        <h3>Benchmark</h3>
+        <div class="price">£450<small>/month</small></div>
+        <ul>
+          <li>All 100+ brands, all 7 components</li>
+          <li>Compare as many brands as you want</li>
+          <li>Product-level drill-down</li>
+          <li>Custom peer groups and alerts</li>
+          <li>PDF and CSV exports</li>
+        </ul>
+        <a href="#demo" class="btn btn-lime" style="margin-top:auto; align-self:flex-start;">Request demo</a>
+      </div>
+
+      <div class="pricing-card">
+        <span class="eyebrow">Enterprise</span>
+        <h3>Integrate</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Full API access and webhooks</li>
+          <li>Your own brand added to the dataset</li>
+          <li>White-label embeds</li>
+          <li>Dedicated analyst and SLAs</li>
+          <li>Custom methodology reviews</li>
+        </ul>
+        <a href="mailto:hello@greenstar.eco" class="btn btn-ghost" style="margin-top:auto; align-self:flex-start;">Contact us</a>
+      </div>
+    </div>
+
+    <div class="comp-anchor">
+      <span class="tag">Context</span>
+      <span class="text">For comparison: <b>WGSN</b> industry subscriptions start around <b>£8,000–15,000 per year</b>. <b>Sustainalytics</b> and <b>MSCI ESG</b> sit at <b>enterprise-only pricing</b>. GreenStar Benchmark covers fashion-specific sustainability data at a fraction of that, with a methodology you can audit line by line.</span>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO CTA -->
+<section class="section" id="demo" style="padding-top:0;">
+  <div class="wrap">
+    <div class="beta-card">
+      <div>
+        <span class="eyebrow light">Book a demo</span>
+        <h2 class="h-display" style="margin-top:20px;">30 minutes.<br/><em>Live data.</em><br/>Your brand set.</h2>
+        <p>We'll walk you through a custom peer comparison for your brand, show you how the methodology scores your last annual report, and answer anything about the data.</p>
+      </div>
+      <div>
+        <form class="beta-form" onsubmit="event.preventDefault(); this.querySelector('button').innerText='Thanks ✓'; this.querySelector('input').value='';">
+          <input type="email" placeholder="you@company.com" required aria-label="Work email" />
+          <button type="submit">Book</button>
+        </form>
+        <div class="beta-fine">Reply within 24 hours · No sales wall</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+          <span class="wm">greenstar</span>
+        </a>
+        <p>A sustainability rating for every fashion product and brand, built into your browser. Made in London, in private beta since January 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="index.html#beta">Join beta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="methodology.html">Scoring disclosure</a></li>
+          <li><a href="references.html">Data &amp; references</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <div class="big-wm">greenstar<span>*</span></div>
+      <div class="foot-mini">
+        <span>© 2026 · All rights reserved</span>
+        <span>V1.0 · Private Beta</span>
+        <span>London · UK</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const brands = {
+    arket:     { name:'Arket',     initial:'A', parent:'H&M GROUP',      location:'Stockholm, SE',       overall:3.4, c:{standards:3.8, incidents:3.8, emissions:3.2, targets:3.4, suppliers:3.0, water:3.0, transparency:3.5}},
+    hm:        { name:'H&M',       initial:'H', parent:'H&M GROUP',      location:'Stockholm, SE',       overall:3.0, c:{standards:3.5, incidents:2.5, emissions:3.4, targets:3.5, suppliers:2.8, water:2.8, transparency:3.0}},
+    cos:       { name:'COS',       initial:'C', parent:'H&M GROUP',      location:'Stockholm, SE',       overall:3.3, c:{standards:3.5, incidents:3.5, emissions:3.2, targets:3.4, suppliers:3.0, water:3.0, transparency:3.5}},
+    zara:      { name:'Zara',      initial:'Z', parent:'INDITEX',        location:'Arteixo, ES',         overall:2.8, c:{standards:3.2, incidents:2.0, emissions:3.2, targets:3.0, suppliers:2.6, water:3.0, transparency:2.8}},
+    uniqlo:    { name:'Uniqlo',    initial:'U', parent:'FAST RETAILING', location:'Yamaguchi, JP',       overall:2.6, c:{standards:2.8, incidents:2.5, emissions:3.0, targets:2.8, suppliers:2.3, water:2.5, transparency:2.5}},
+    nike:      { name:'Nike',      initial:'N', parent:'NIKE INC.',      location:'Beaverton, US',       overall:2.8, c:{standards:3.0, incidents:2.0, emissions:3.2, targets:3.4, suppliers:3.0, water:2.8, transparency:2.6}},
+    adidas:    { name:'Adidas',    initial:'A', parent:'ADIDAS AG',      location:'Herzogenaurach, DE',  overall:3.2, c:{standards:3.5, incidents:3.0, emissions:3.5, targets:3.8, suppliers:3.2, water:3.2, transparency:2.6}},
+    ganni:     { name:'Ganni',     initial:'G', parent:'GANNI A/S',      location:'Copenhagen, DK',      overall:3.6, c:{standards:3.8, incidents:4.2, emissions:3.2, targets:3.8, suppliers:3.4, water:3.4, transparency:3.2}},
+    patagonia: { name:'Patagonia', initial:'P', parent:'PATAGONIA INC.', location:'Ventura, US',         overall:4.2, c:{standards:4.5, incidents:4.8, emissions:4.0, targets:4.5, suppliers:4.2, water:3.8, transparency:4.5}},
+    pangaia:   { name:'Pangaia',   initial:'P', parent:'THE PANGAIA',    location:'London, UK',          overall:4.0, c:{standards:3.8, incidents:5.0, emissions:4.2, targets:4.5, suppliers:3.5, water:3.8, transparency:3.5}},
+    shein:     { name:'Shein',     initial:'S', parent:'SHEIN GROUP',    location:'Nanjing, CN',         overall:1.2, c:{standards:1.0, incidents:0.5, emissions:1.5, targets:1.2, suppliers:1.0, water:1.2, transparency:1.2}},
+  };
+
+  const compKeys  = ['standards','incidents','emissions','targets','suppliers','water','transparency'];
+  const compNames = { standards:'Standards', incidents:'Incidents', emissions:'Emissions', targets:'Climate Targets', suppliers:'Suppliers', water:'Water', transparency:'Transparency'};
+
+  function stars(v){
+    const full = Math.round(v);
+    const empty = 5 - full;
+    return '★'.repeat(full) + '<span style="opacity:0.4;">' + '★'.repeat(empty) + '</span>';
+  }
+  function toneClass(v){ if(v >= 3.3) return ''; if(v >= 2.0) return 'low'; return 'bad'; }
+
+  function updateBrandCard(which, data){
+    const root = document.querySelector('.brand-' + which);
+    if(!root) return;
+    const logo = root.querySelector('.db-logo');
+    const name = root.querySelector('.name-text');
+    const parent = root.querySelector('.parent');
+    const loc = root.querySelector('.loc');
+    const score = root.querySelector('.db-score');
+    const starsEl = root.querySelector('.stars');
+    if(logo) logo.textContent = data.initial;
+    if(name) name.innerHTML = data.name;
+    if(parent) parent.textContent = data.parent;
+    if(loc) loc.textContent = data.location;
+    if(score) score.textContent = data.overall.toFixed(1);
+    if(starsEl) starsEl.innerHTML = stars(data.overall);
+    const segs = root.querySelectorAll('.db-seg .bar i');
+    segs.forEach((el, i) => {
+      const k = compKeys[i];
+      if(!k) return;
+      el.style.width = (data.c[k] / 5 * 100) + '%';
+    });
+  }
+
+  function updateComponents(a, b){
+    compKeys.forEach(k => {
+      const row = document.querySelector('.dc-row[data-key="' + k + '"]');
+      if(!row) return;
+      const aVal = a.c[k], bVal = b.c[k];
+      const aBar = row.querySelector('.bar-a .track i');
+      const bBar = row.querySelector('.bar-b .track i');
+      const aTone = toneClass(aVal), bTone = toneClass(bVal);
+      if(aBar){ aBar.className = aTone; aBar.style.width = (aVal / 5 * 100) + '%'; }
+      if(bBar){ bBar.className = bTone; bBar.style.width = (bVal / 5 * 100) + '%'; }
+      const aVal_el = row.querySelector('.bar-a .val');
+      const bVal_el = row.querySelector('.bar-b .val');
+      if(aVal_el) aVal_el.textContent = aVal.toFixed(1);
+      if(bVal_el) bVal_el.textContent = bVal.toFixed(1);
+    });
+    const aLabel = document.querySelector('.brand-a-label');
+    const bLabel = document.querySelector('.brand-b-label');
+    if(aLabel) aLabel.textContent = a.name;
+    if(bLabel) bLabel.textContent = b.name;
+  }
+
+  function generateInsight(a, b){
+    const el = document.querySelector('.dash-insight .text');
+    if(!el) return;
+    const diff = a.overall - b.overall;
+    const pct = Math.round(Math.abs(diff) / Math.min(a.overall, b.overall) * 100);
+
+    const compDiffs = compKeys.map(k => ({ k, d: a.c[k] - b.c[k] }));
+    compDiffs.sort((x, y) => Math.abs(y.d) - Math.abs(x.d));
+
+    if(Math.abs(diff) < 0.1){
+      const top = compDiffs[0];
+      el.innerHTML = '<b>' + a.name + '</b> and <b>' + b.name + '</b> perform almost identically overall. The biggest gap is in <b>' + compNames[top.k] + '</b> (' + (top.d >= 0 ? '+' : '') + top.d.toFixed(1) + ').';
+      return;
+    }
+
+    const leader   = diff > 0 ? a : b;
+    const laggard  = diff > 0 ? b : a;
+    const leaderDir = diff > 0 ? 1 : -1;
+
+    const drivers = compDiffs
+      .filter(c => (c.d * leaderDir) > 0)
+      .slice(0, 2)
+      .map(c => compNames[c.k] + ' (' + (c.d * leaderDir > 0 ? '+' : '') + (c.d * leaderDir).toFixed(1) + ')')
+      .join(' and ');
+
+    el.innerHTML = '<b>' + leader.name + '</b> is <span class="pct">' + pct + '% more sustainable</span> than <b>' + laggard.name + '</b> overall, led by ' + (drivers || 'balanced performance across components') + '.';
+  }
+
+  function refresh(){
+    const aSel = document.getElementById('brand-a');
+    const bSel = document.getElementById('brand-b');
+    if(!aSel || !bSel) return;
+    const a = brands[aSel.value];
+    const b = brands[bSel.value];
+    if(!a || !b) return;
+    updateBrandCard('a', a);
+    updateBrandCard('b', b);
+    updateComponents(a, b);
+    generateInsight(a, b);
+  }
+
+  function init(){
+    const aSel = document.getElementById('brand-a');
+    const bSel = document.getElementById('brand-b');
+    if(!aSel || !bSel){
+      // retry if DOM not ready
+      setTimeout(init, 60);
+      return;
+    }
+    aSel.addEventListener('change', refresh);
+    bSel.addEventListener('change', refresh);
+    // also respond to input for better responsiveness
+    aSel.addEventListener('input', refresh);
+    bSel.addEventListener('input', refresh);
+    refresh();
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<script>
+  (function(){
+    var body = document.body, btn = document.querySelector('.menu-trigger'), overlay = document.querySelector('.menu-overlay');
+    if(!btn || !overlay) return;
+    function setOpen(open){
+      body.classList.toggle('menu-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    }
+    btn.addEventListener('click', function(){ setOpen(!body.classList.contains('menu-open')); });
+    overlay.addEventListener('click', function(e){ if(e.target.tagName === 'A') setOpen(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+    var mq = window.matchMedia('(min-width: 821px)');
+    mq.addEventListener('change', function(e){ if(e.matches) setOpen(false); });
+  })();
+</script>
+
+</body>
+</html>
