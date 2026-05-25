@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Data &amp; References — GreenStar</title>
+<meta name="description" content="Full citations for every regulatory timeline, statistic, and methodology claim on the GreenStar website." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .ref-section{ margin-bottom:56px;}
+  .ref-section h2{
+    font-family:'Helvetica Neue', sans-serif; font-weight:700;
+    font-size: clamp(30px, 3.4vw, 44px); letter-spacing:-0.03em; line-height:1.05;
+    margin-bottom:8px;
+    padding-bottom:14px;
+    border-bottom:2px solid var(--lime);
+    display:inline-block;
+  }
+  .ref-section h2 em{
+    font-family:'Instrument Serif', serif; font-style:italic; font-weight:400;
+    color:var(--forest-2);
+  }
+  .ref-section .ref-lead{
+    font-size:15px; color:var(--ink-2); line-height:1.6;
+    margin-top:20px; margin-bottom:28px; max-width:720px;
+  }
+  .ref-list{ list-style:none;}
+  .ref-list li{
+    display:grid; grid-template-columns: 48px 1fr;
+    gap:20px; align-items:baseline;
+    padding:22px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .ref-list li:last-child{ border-bottom:0;}
+  .ref-list .num{
+    font-family:'Helvetica Neue', sans-serif; font-weight:700;
+    font-size:22px; letter-spacing:-0.03em;
+    color:var(--forest);
+  }
+  .ref-list .body .claim{
+    font-family:'Helvetica Neue', sans-serif; font-weight:700;
+    font-size:15px; letter-spacing:-0.015em;
+    color:var(--ink);
+    margin-bottom:8px;
+    line-height:1.4;
+  }
+  .ref-list .body .src{
+    font-size:13.5px; line-height:1.6; color:var(--ink-2);
+    margin-bottom:6px;
+  }
+  .ref-list .body .src b{ font-weight:700; color:var(--ink);}
+  .ref-list .body .link{
+    font-family:'JetBrains Mono', monospace;
+    font-size:11px; letter-spacing:0.04em;
+    margin-top:8px;
+    display:inline-block;
+  }
+  .ref-list .body .link a{
+    color:var(--forest);
+    text-decoration:underline; text-underline-offset:3px;
+    word-break:break-all;
+  }
+  .ref-list .body .link a:hover{ color:var(--forest-2);}
+  .ref-list .body .verified{
+    font-family:'JetBrains Mono', monospace;
+    font-size:10px; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--forest-2);
+    margin-top:10px;
+    display:inline-flex; align-items:center; gap:6px;
+  }
+  .ref-list .body .verified::before{
+    content:""; width:6px; height:6px; border-radius:50%; background:var(--lime);
+  }
+  .method-note{
+    background:var(--cream); border:1px solid var(--line);
+    padding:32px; margin-top:32px;
+    display:grid; grid-template-columns: 140px 1fr;
+    gap:32px; align-items:start;
+  }
+  @media (max-width:720px){ .method-note{ grid-template-columns:1fr; gap:14px; padding:22px;}}
+  .method-note .tag{
+    font-family:'Helvetica Neue', sans-serif; font-weight:700;
+    font-size:10.5px; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--forest);
+  }
+  .method-note p{ font-size:14px; color:var(--ink-2); line-height:1.6;}
+  .method-note p + p{ margin-top:12px;}
+  .method-note em{ font-family:'Instrument Serif', serif; font-style:italic; color:var(--forest-2);}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="top-row">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+      <span class="wm">greenstar</span>
+    </a>
+    <div class="nav-links">
+      <a href="how-it-works.html">How it works</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#beta" class="btn btn-forest">Join beta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+      </a>
+      <button class="menu-trigger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    </div>
+  </div>
+</nav>
+<div class="menu-overlay" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+      <a href="how-it-works.html">How it <em>works</em></a>
+      <a href="methodology.html">Methodology</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+  </nav>
+  <div class="foot">
+    <a class="cta" href="index.html#beta">
+      <span>Join the private beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+    </a>
+    <div class="meta">
+      <span>London &middot; UK</span>
+      <span>Private beta 2026</span>
+    </div>
+  </div>
+</div>
+
+
+<section class="hero" style="padding:72px 0 48px;">
+  <div class="wrap">
+    <div class="hero-eyebrow">
+      <span class="eyebrow"><span class="dot"></span>Data &amp; references</span>
+      <span class="mono">Last verified · April 2026</span>
+    </div>
+    <h1 class="h-display" style="font-size:clamp(52px, 9vw, 144px);">Every claim,<br/><em>sourced.</em></h1>
+    <div class="hero-below" style="margin-top:40px;">
+      <p class="pull">If we put a number on the website, it's backed by a named, dated, accessible source. This page lists every one, in the order they appear on the site. <b>If we get something wrong, tell us</b> — we'll fix it and thank you publicly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px;">
+  <div class="wrap-narrow">
+
+    <!-- WHY NOW -->
+    <div class="ref-section">
+      <h2>Regulatory <em>timeline</em></h2>
+      <p class="ref-lead">All regulatory claims are drawn from official government sources (European Commission, California Air Resources Board) or independent industry analyses published in 2026.</p>
+
+      <ul class="ref-list">
+
+        <li>
+          <span class="num">[1]</span>
+          <div class="body">
+            <div class="claim">EU ESPR destruction ban for unsold textiles &amp; footwear, effective 19 July 2026 for large companies.</div>
+            <div class="src"><b>European Commission</b>, "New EU rules to stop destruction of unsold clothes and shoes", Directorate-General for Environment, 9 February 2026.</div>
+            <div class="src">Confirms: (i) the Ecodesign for Sustainable Products Regulation (ESPR) entered into force 18 July 2024; (ii) destruction ban applies from 19 July 2026 for large enterprises; (iii) medium-sized companies follow in 2030; (iv) an estimated 4–9% of unsold textiles in Europe are destroyed each year, generating ~5.6 million tons of CO₂ emissions.</div>
+            <div class="link">↗ <a href="https://environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en" target="_blank" rel="noopener">environment.ec.europa.eu/news/new-eu-rules-stop-destruction-unsold-clothes-and-shoes-2026-02-09_en</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[2]</span>
+          <div class="body">
+            <div class="claim">California SB 253 (Climate Corporate Data Accountability Act) first reporting deadline 10 August 2026 for Scope 1 &amp; 2; Scope 3 from 2027.</div>
+            <div class="src"><b>California Air Resources Board (CARB)</b>, "CARB approves climate transparency regulation for entities doing business in California", 26 February 2026.</div>
+            <div class="src">Confirms: (i) SB 253 applies to U.S.-based entities with &gt;$1B annual revenue doing business in California; (ii) first-year reporting deadline is 10 August 2026 for Scope 1 &amp; 2 emissions; (iii) Scope 3 reporting begins in 2027; (iv) an estimated 5,400 organisations are in scope.</div>
+            <div class="link">↗ <a href="https://ww2.arb.ca.gov/news/carb-approves-climate-transparency-regulation-entities-doing-business-california" target="_blank" rel="noopener">ww2.arb.ca.gov/news/carb-approves-climate-transparency-regulation-entities-doing-business-california</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[3]</span>
+          <div class="body">
+            <div class="claim">EU Digital Product Passport registry operational by July 2026; textile delegated act expected late 2026 / early 2027.</div>
+            <div class="src"><b>European Commission, Green Forum</b>, "Implementing the Ecodesign for Sustainable Products Regulation", 2025.</div>
+            <div class="src">Cross-referenced with <b>Regen Studio</b>, "The Expected ESPR Delegated Act on Textiles" (Feb 2026) and <b>Eunomia</b>, "What is the European Ecodesign for Sustainable Products Regulation (ESPR)" (2025). These sources concur on the 2027 indicative adoption date for the textile delegated act, with compliance deadlines typically phased in over 12–24 months.</div>
+            <div class="link">↗ <a href="https://green-forum.ec.europa.eu/implementing-ecodesign-sustainable-products-regulation_en" target="_blank" rel="noopener">green-forum.ec.europa.eu/implementing-ecodesign-sustainable-products-regulation_en</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- INTENTION GAP -->
+    <div class="ref-section">
+      <h2>The intention <em>gap</em></h2>
+      <p class="ref-lead">Consumer research on the well-documented gap between stated sustainability preferences and actual purchase behaviour in fashion.</p>
+
+      <ul class="ref-list">
+
+        <li>
+          <span class="num">[4]</span>
+          <div class="body">
+            <div class="claim">59% of Gen Z shoppers admit their generation talks about sustainability more than they practise it.</div>
+            <div class="src"><b>RSM UK and Retail Economics</b>, joint study based on a survey of 1,500 Gen Z shoppers, published December 2025.</div>
+            <div class="src">Reported by Retail Gazette, 9 December 2025. Further findings: 29% of Gen Z consider themselves committed to sustainable consumption; 43% fall into "aspirational intention" (value sustainability but compromise on it for price or convenience); 28% say sustainability ranks low in their buying decisions; 40% admit to buying items they will only wear once.</div>
+            <div class="link">↗ <a href="https://www.retailgazette.co.uk/blog/2025/12/data-gen-zs-sustainability-intention-gap-widens-due-to-ultra-fast-fashion-purchases/" target="_blank" rel="noopener">retailgazette.co.uk/blog/2025/12/data-gen-zs-sustainability-intention-gap-widens-due-to-ultra-fast-fashion-purchases</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[5]</span>
+          <div class="body">
+            <div class="claim">Just 20% of shoppers actively compare brands' sustainability credentials when shopping.</div>
+            <div class="src"><b>Zalando SE</b>, "Attitude–Behavior Gap Report", research conducted in partnership with sustainability consultancy Quantis.</div>
+            <div class="src">Additional supporting findings: 65% of women and 56% of men say their self-confidence is strongly influenced by the clothes they wear; half of consumers are unsure what "sustainable fashion" actually means; 44% feel sustainable fashion is hard to find.</div>
+            <div class="link">↗ <a href="https://corporate.zalando.com/en/our-impact/sustainability/sustainability-reports/attitude-behavior-gap-report" target="_blank" rel="noopener">corporate.zalando.com/en/our-impact/sustainability/sustainability-reports/attitude-behavior-gap-report</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[6]</span>
+          <div class="body">
+            <div class="claim">33% of consumers believe sustainable alternatives are too expensive.</div>
+            <div class="src"><b>Simon-Kucher &amp; Partners</b>, "Global Sustainability Study 2022".</div>
+            <div class="src">Quoted by Shikha Jain, Head of Simon-Kucher &amp; Partners' Boston office, in Fashion Dive, May 2023. The same study identifies affordability and social-media influences as the two primary barriers to Gen Z putting sustainable-fashion beliefs into action.</div>
+            <div class="link">↗ <a href="https://www.fashiondive.com/news/sustainable-fashion-consumer-demographics-gen-z/650864/" target="_blank" rel="noopener">fashiondive.com/news/sustainable-fashion-consumer-demographics-gen-z</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- COMPETITIVE CONTEXT -->
+    <div class="ref-section">
+      <h2>Competitive <em>context</em></h2>
+      <p class="ref-lead">Comparative pricing and market data used to anchor the GreenStar Dashboard positioning.</p>
+
+      <ul class="ref-list">
+
+        <li>
+          <span class="num">[7]</span>
+          <div class="body">
+            <div class="claim">WGSN industry subscriptions are in the £8,000–15,000 per year range for mid-market users.</div>
+            <div class="src"><b>WGSN</b> subscription pricing, as reported by multiple independent sources. Exact pricing is quoted, not publicly listed; the £8k–15k range reflects the mid-market tier commonly cited by industry analysts and confirmed by published case studies. Enterprise tiers sit meaningfully higher.</div>
+            <div class="src"><b>Sustainalytics</b> and <b>MSCI ESG</b> ratings operate on enterprise-only pricing tied to portfolio size and access tier. We describe these as "enterprise-only" rather than quoting exact figures.</div>
+            <div class="verified">Claim reviewed &amp; approved by founder with institutional ESG-pricing background</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[8]</span>
+          <div class="body">
+            <div class="claim">Textile sector represents ~6% of global greenhouse-gas emissions and 10–20% of pesticide use.</div>
+            <div class="src"><b>McKinsey &amp; Company and The Business of Fashion</b>, "State of Fashion" report series (2022 edition referenced). Widely cited industry-standard figures; note that some academic sources (see [9]) estimate the range at 2–8% of global GHG emissions depending on scope boundaries used.</div>
+            <div class="link">↗ <a href="https://www.mckinsey.com/industries/retail/our-insights/state-of-fashion-archive" target="_blank" rel="noopener">mckinsey.com/industries/retail/our-insights/state-of-fashion-archive</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[9]</span>
+          <div class="body">
+            <div class="claim">Secondhand fashion purchases correlate with increased primary-market consumption, not displacement (r = 0.58, p &lt; 0.01).</div>
+            <div class="src"><b>Scientific Reports (Nature)</b>, "Secondhand fashion consumers exhibit fast fashion behaviors despite sustainability narratives", October 2025. Nationally representative survey of 1,009 U.S. consumers.</div>
+            <div class="src">Supporting finding: 37.2% of respondents reported increasing clothing donations between 2020 and 2024, coinciding with a 38% rise in new clothing purchases. This is strong empirical support for the "moral licensing" framework of the intention-action gap.</div>
+            <div class="link">↗ <a href="https://www.nature.com/articles/s41598-025-19089-1" target="_blank" rel="noopener">nature.com/articles/s41598-025-19089-1</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <div class="ref-section">
+      <h2>Methodology <em>inputs</em></h2>
+      <p class="ref-lead">Source data and standards underlying the GreenStar scoring methodology. Full methodology logic is documented on the <a href="methodology.html" style="color:var(--forest); text-decoration:underline; text-underline-offset:3px; font-weight:700;">Methodology page</a>.</p>
+
+      <ul class="ref-list">
+
+        <li>
+          <span class="num">[10]</span>
+          <div class="body">
+            <div class="claim">SBTi 1.5°C-aligned pathway requires 6.1% annual absolute-emissions reduction from 2019 levels.</div>
+            <div class="src"><b>Science Based Targets initiative (SBTi)</b>, "Corporate Net-Zero Standard". Derived from the SBTi target of a 50% absolute reduction from 2019 levels by 2030, which annualises to a required decarbonisation rate of 1 − 0.5^(1/11) ≈ <b>6.1% per year</b>.</div>
+            <div class="src">Used as the baseline in the Emissions component of the GreenStar Brand Score. Formula: score = 2.5 + (actual rate − 6.1) × 0.5 × 2, capped between 0 and 5.</div>
+            <div class="link">↗ <a href="https://sciencebasedtargets.org/" target="_blank" rel="noopener">sciencebasedtargets.org</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[11]</span>
+          <div class="body">
+            <div class="claim">Third-party sustainability certifications used with relevance-weighted scoring (GOTS = 1.0, OEKO-TEX = 0.75, Bluesign = 0.75, ISO 14001 = 0.5, Cradle to Cradle = 0.5, Fair Trade = 0.5, REACH = 0.5, ISO 14040/44 = 0.5).</div>
+            <div class="src"><b>Weight-calibration rationale</b>: designed by Lorenz (GreenStar Founding Sustainability Specialist, day job in commodity ESG ratings at S&amp;P Global) using an informed-judgement approach. Weights reflect relative rigor, independence, coverage depth, and sector relevance.</div>
+            <div class="src">Weights are <em>opinionated, not empirically calibrated against human judgement</em> — a candid acknowledgement. We publish them openly so that critics can disagree on specific weights rather than with the black box, and we intend to empirically calibrate against expert panels post-beta.</div>
+            <div class="verified">Methodology approach documented in full on the Methodology page</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[12]</span>
+          <div class="body">
+            <div class="claim">60/40 product-to-brand weighting in the overall GreenStar score.</div>
+            <div class="src"><b>Weight-calibration rationale</b>: this is an opinionated split designed by Kayyan (Founder, formerly Morgan Stanley Fixed Income ESG Strategy &amp; Research). The logic is that product-level signals reflect what the shopper is actually buying, so they should dominate; but brand-level performance modulates, so an organic cotton tee from a weak brand shouldn't score the same as the same tee from a leader.</div>
+            <div class="src">The 60/40 is a starting calibration. We plan to empirically validate it against (i) expert-panel rankings, and (ii) observed behavioural data (which weighting most closely predicts observed consumer switching). If the data justifies a different split, we will publish the update and the reasoning.</div>
+            <div class="verified">Calibration plan documented; empirical validation begins post-MVP</div>
+          </div>
+        </li>
+
+        <li>
+          <span class="num">[13]</span>
+          <div class="body">
+            <div class="claim">Brand-level incident severity deductions (Severe: −2.0 / Moderate: −1.0 / Minor: −0.5), halved for incidents occurring 3–5 years prior.</div>
+            <div class="src">Incidents data sourced from independent databases including <b>Clean Clothes Campaign</b>, <b>FashionChecker</b>, and supplementing with news-database searches. All incidents are publicly reported; no internal or whistleblower data is used.</div>
+            <div class="link">↗ <a href="https://cleanclothes.org/" target="_blank" rel="noopener">cleanclothes.org</a> · <a href="https://fashionchecker.org/" target="_blank" rel="noopener">fashionchecker.org</a></div>
+            <div class="verified">Verified 23 April 2026</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- METHOD NOTE -->
+    <div class="method-note">
+      <div class="tag">A note on<br/><em>honesty</em></div>
+      <div>
+        <p>GreenStar is an <em>estimate</em>, not an audit. Every number on this site is either (a) drawn from a public, named, dated source, or (b) an opinionated modelling choice that we document as such.</p>
+        <p>Where our weights are opinionated, we say so. Where our data is incomplete, we say so. Where an expert disagrees with a specific weight, we'd genuinely like to hear it — constructive pushback is how the methodology gets better.</p>
+        <p>If you find something we've got wrong, misstated, or taken out of context, email <b>hello@greenstar.eco</b>. We'll correct it on this page and credit the flagger publicly, unless you'd rather stay anonymous.</p>
+      </div>
+    </div>
+
+    <!-- VERSION NOTICE -->
+    <div style="margin-top:64px; padding-top:24px; border-top:1px solid var(--line);">
+      <p class="fn" style="margin-top:0;">References page version 1.0 · Last full audit: 23 April 2026 · Next scheduled review: 23 July 2026. We re-verify every link at least quarterly and before any methodology release.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="index.html" class="brand">
+          <span class="mark"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2 V22 M3.5 5.5 L20.5 18.5 M2 12 H22 M3.5 18.5 L20.5 5.5"/></svg></span>
+          <span class="wm">greenstar</span>
+        </a>
+        <p>A sustainability rating for every fashion product and brand, built into your browser. Made in London, in private beta since January 2026.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="index.html#beta">Join beta</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="methodology.html">Scoring disclosure</a></li>
+          <li><a href="references.html">Data &amp; references</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <div class="big-wm">greenstar<span>*</span></div>
+      <div class="foot-mini">
+        <span>© 2026 · All rights reserved</span>
+        <span>V1.0 · Private Beta</span>
+        <span>London · UK</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var body = document.body, btn = document.querySelector('.menu-trigger'), overlay = document.querySelector('.menu-overlay');
+    if(!btn || !overlay) return;
+    function setOpen(open){
+      body.classList.toggle('menu-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    }
+    btn.addEventListener('click', function(){ setOpen(!body.classList.contains('menu-open')); });
+    overlay.addEventListener('click', function(e){ if(e.target.tagName === 'A') setOpen(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+    // close if viewport widens past mobile breakpoint
+    var mq = window.matchMedia('(min-width: 821px)');
+    mq.addEventListener('change', function(e){ if(e.matches) setOpen(false); });
+  })();
+</script>
+
+</body>
+</html>
