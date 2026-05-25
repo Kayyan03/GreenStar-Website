@@ -28,9 +28,29 @@
       <a href="index.html#beta" class="btn btn-forest">Join beta
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
       </a>
+      <button class="menu-trigger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
     </div>
   </div>
 </nav>
+<div class="menu-overlay" id="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile">
+      <a href="how-it-works.html">How it <em>works</em></a>
+      <a href="methodology.html" class="active">Methodology</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="about.html">About</a>
+  </nav>
+  <div class="foot">
+    <a class="cta" href="index.html#beta">
+      <span>Join the private beta</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+    </a>
+    <div class="meta">
+      <span>London &middot; UK</span>
+      <span>Private beta 2026</span>
+    </div>
+  </div>
+</div>
+
 
 <section class="hero" style="padding:72px 0 64px;">
   <div class="wrap">
@@ -316,11 +336,22 @@
   </div>
 </footer>
 
-<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
 <script>
-  const lenis = new Lenis({ duration: 1.0, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true });
-  function raf(time){ lenis.raf(time); requestAnimationFrame(raf);}
-  requestAnimationFrame(raf);
+  (function(){
+    var body = document.body, btn = document.querySelector('.menu-trigger'), overlay = document.querySelector('.menu-overlay');
+    if(!btn || !overlay) return;
+    function setOpen(open){
+      body.classList.toggle('menu-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    }
+    btn.addEventListener('click', function(){ setOpen(!body.classList.contains('menu-open')); });
+    overlay.addEventListener('click', function(e){ if(e.target.tagName === 'A') setOpen(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape') setOpen(false); });
+    // close if viewport widens past mobile breakpoint
+    var mq = window.matchMedia('(min-width: 821px)');
+    mq.addEventListener('change', function(e){ if(e.matches) setOpen(false); });
+  })();
 </script>
 
 </body>
